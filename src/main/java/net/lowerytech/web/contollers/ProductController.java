@@ -18,9 +18,9 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @GetMapping("/product")
+    //@GetMapping("/product")
     public String getProduct(){
-        return "product";
+        return "redirect:/index";
     }
 
     @RequestMapping("/product/{id}")

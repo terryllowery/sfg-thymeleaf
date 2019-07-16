@@ -9,7 +9,7 @@
 <div class="col-md-4" th:fragment="productdiv">
     <div class="course-listing">
         <div class="row">
-            <a href="product.html" th:href="@{'/product/' + ${product.id}">
+            <a href="product.html" th:href="@{'/product/' + ${product.id}}">
                 <div class="col-lg-12">
                     <div class="course-box-image-container">
                         <img role="presentation"
@@ -32,7 +32,7 @@
                 src="../static/images/instructor_lt.jpg"
                      th:src="@{'/images/' + ${product.author.image}}"
                      class="img-circle" />
-                <div class="small course-author-name" th:text="${(product.auth.firstName) + ' ' + (product.author.lastName)}">
+                <div class="small course-author-name" th:text="${(product.author.firstName) + ' ' + (product.author.lastName)}">
                     Firstname Lastname
                 </div>
             </div>

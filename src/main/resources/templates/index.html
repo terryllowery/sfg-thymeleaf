@@ -28,16 +28,30 @@
 
 
 
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-        </tr>
-        <tr th:each="product : ${products}">
-            <td th:text="${product.id}"></td>
-            <td th:text="${product.courseName}"></td>
-        </tr>
-    </table>
+    <div class="row course-list list">
+        <div class="row course-list list">
+            <div th:each="product,it : ${products}">
+                <div th:if="${it.count gt 0 and it.count lt 4}">
+                    <div th:replace="fragements/productdiv :: productdiv">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row course-list list">
+        <div class="row course-list list">
+            <div th:each="product,it : ${products}">
+                <div th:if="${it.count gt 3 and it.count lt 7}">
+                    <div th:replace="fragements/productdiv :: productdiv">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div> <!-- End of main container -->
 
