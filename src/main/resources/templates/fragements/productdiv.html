@@ -42,6 +42,13 @@
                 </div>
             </div>
         </div>
+        <div class="row col-xs-12">
+            <div class="breadcrumb">
+                <li th:each="productCategory : ${product.productCategories}">
+                    <a href="#" th:text="${productCategory.category}"></a>
+                </li>
+            </div>
+        </div>
     </div>
 </div>
 
