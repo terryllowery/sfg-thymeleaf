@@ -25,6 +25,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{firstName}" th:errorclass="has-error"/>
                 <span class="help-block" th:if="${#fields.hasErrors('firstName')}">
+                    <h4 th:text="#{checkoutCommand.firstName}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('firstName')}" th:text="${err}" />
                     </ul>
@@ -37,6 +38,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{lastName}" th:errorclass="has-error" />
                 <span class="help-block" th:if="${#fields.hasErrors('lastName')}">
+                    <h4 th:text="#{checkoutCommand.lastName}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('lastName')}" th:text="${err}" />
                     </ul>
@@ -49,6 +51,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{addressLine1}" th:errorclass="has-error"/>
                 <span class="help-block" th:if="${#fields.hasErrors('addressLine1')}">
+                    <h4 th:text="#{checkoutCommand.addressLine1}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('addressLine1')}" th:text="${err}" />
                     </ul>
@@ -61,6 +64,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{addressLine2}" th:errorclass="has-error"/>
                 <span class="help-block" th:if="${#fields.hasErrors('addressLine2')}">
+                    <h4 th:text="#{checkoutCommand.addressLine2}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('addressLine2')}" th:text="${err}" />
 
@@ -74,6 +78,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{city}" th:errorclass="has-error"/>
                 <span class="help-block" th:if="${#fields.hasErrors('city')}">
+                    <h4 th:text="#{checkoutCommand.city}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('city')}" th:text="${err}" />
                     </ul>
@@ -86,6 +91,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{stateCode}" th:errorclass="has-error"/>
                 <span class="help-block" th:if="${#fields.hasErrors('stateCode')}">
+                    <h4 th:text="#{checkoutCommand.stateCode}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('stateCode')}" th:text="${err}" />
                     </ul>
@@ -98,6 +104,7 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" th:field="*{zipCode}" th:errorclass="has-error"/>
                 <span class="help-block" th:if="${#fields.hasErrors('zipCode')}">
+                    <h4 th:text="#{checkoutCommand.zipCode}"></h4>
                     <ul>
                         <li th:each="err : ${#fields.errors('zipCode')}" th:text="${err}" />
                     </ul>
