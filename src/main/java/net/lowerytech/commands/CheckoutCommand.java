@@ -84,4 +84,17 @@ public class CheckoutCommand {
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
+
+    @Override
+    public String toString() {
+        return "CheckoutCommand{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", addressLine1='" + addressLine1 + '\'' +
+                ", addressLine2='" + addressLine2 + '\'' +
+                ", city='" + city + '\'' +
+                ", stateCode='" + stateCode + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                '}';
+    }
 }
