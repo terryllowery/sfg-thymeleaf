@@ -14,7 +14,7 @@ public class LoginController {
 
     @RequestMapping("login")
     public String loginForm(Model model){
-        model.addAttribute("loginForm", new LoginCommand ());
+        model.addAttribute("loginCommand", new LoginCommand ());
         return "loginform";
     }
 
