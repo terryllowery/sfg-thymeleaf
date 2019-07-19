@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="jumbotron" th:replace="fragements/jumbotron :: jumbotron">
+<div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
     <div class="container">
         <h1>Spring Framework Guru</h1>
         <p class="lead" th:text="#{index.courses.tagline}">Online Courses for Spring Framework</p>
@@ -32,7 +32,7 @@
         <div class="row course-list list">
             <div th:each="product,it : ${products}">
                 <div th:if="${it.count gt 0 and it.count lt 4}">
-                    <div th:replace="fragements/productdiv :: productdiv">
+                    <div th:replace="fragments/productdiv :: productdiv">
 
                     </div>
                 </div>
@@ -45,7 +45,7 @@
         <div class="row course-list list">
             <div th:each="product,it : ${products}">
                 <div th:if="${it.count gt 3 and it.count lt 7}">
-                    <div th:replace="fragements/productdiv :: productdiv">
+                    <div th:replace="fragments/productdiv :: productdiv">
 
                     </div>
                 </div>
@@ -55,7 +55,7 @@
 
 </div> <!-- End of main container -->
 
-    <div th:replace="fragements/footer :: footer">
+    <div th:replace="fragments/footer :: footer">
     </div>
 
 

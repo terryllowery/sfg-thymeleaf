@@ -12,7 +12,7 @@ import javax.validation.Valid;
 @Controller
 public class LoginController {
 
-    @RequestMapping("login")
+    @RequestMapping("/login")
     public String loginForm(Model model){
         model.addAttribute("loginCommand", new LoginCommand ());
         return "loginform";
@@ -28,6 +28,6 @@ public class LoginController {
         if(bindingResult.hasErrors ()) {
             return "loginform";
         }
-        return "logincomplete";
+        return "redirect:index";
     }
 }
