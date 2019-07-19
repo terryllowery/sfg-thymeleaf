@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title> <link href="../static/css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="screen"  th:href="@{/css/bootstrap-3.3.7-dist/css/bootstrap.min.css}" />
+
+    <script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" media="screen" />
+    <title>Security demo</title>
+</head>
+<body>
+<div class="container" style="height: 100vh;">
+    <div class="row" sec>
+        <div class="col-md-12">
+            <h1>Spring Security Demo</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <h2>User Is Logged in</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <h2>User is Logged out</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <h2>User Has Admin Role</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <h2>User has User Role</h2>
+        </div>
+    </div>
+    <div class="container" th:replace="fragements/footer footer">
+        <p>footer</p>
+    </div>
+</div>
+
+</body>
+</html>
